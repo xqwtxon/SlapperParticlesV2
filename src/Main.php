@@ -49,7 +49,7 @@ class Main extends PluginBase{
         }
         if (isset($colorC)) {
             $log->error("[ERROR] Color C is blank!");
-            $log->notice("[NOTICE] Color C modified to 255 as default.")
+            $log->notice("[NOTICE] Color C modified to 255 as default.");
             $this->getConfig()->set("Color C", 255);
             return;
         }
