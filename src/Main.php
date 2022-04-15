@@ -37,6 +37,9 @@ class Main extends PluginBase implements SlapperParticleInfo {
                 $log->info(TextFormat::RED."[ERROR] Your SlapperParticles isnt Compatible with your version!");
                 $this->getServer()->getPluginManager()->disablePlugin($this);
             }
+        $colorA = $config->get("Color A");
+        $colorB = $config->get("Color B");
+        $colorA = $config->get("Color C");
         if (!isset($colorA)) {
             $log->error("[ERROR] Color A is blank!");
             $log->notice("[NOTICE] Color A modified to 255 as default.");
