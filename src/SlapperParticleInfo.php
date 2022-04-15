@@ -2,7 +2,7 @@
 
 namespace xqwtxon\SlapperParticlesV2;
 
-interface SlapperRotationInfo {
+interface SlapperParticleInfo {
     /**
      * NOTE FOR DEVELOPERS:
      * CHANGING THIS COULD BREAK THIS PLUGIN!
