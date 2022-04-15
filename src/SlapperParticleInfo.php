@@ -1,6 +1,6 @@
 <?php
 
-namespace xqwtxon\SlapperRotationV2;
+namespace xqwtxon\SlapperParticlesV2;
 
 interface SlapperRotationInfo {
     /**

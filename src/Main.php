@@ -7,8 +7,9 @@ use xqwtxon\SlapperParticleV2\ParticleEffect;
 use xqwtxon\SlapperParticleV2\SlapperParticleInfo;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\VersionInfo;
+use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase{
+class Main extends PluginBase implementd SlapperParticleInfo {
     public function onLoad() :void{
         $this->saveResource("config.yml");
         $log = $this->getServer()->getLogger();
@@ -29,6 +30,7 @@ class Main extends PluginBase{
     public function onEnable(): void{
         $config = $this->getConfig();
         $log = $this->getServer()->getLogger();
+        $toggle = $config->get("enabled");
             if (SlapperParticlesInfo::PROTOCOL_VERSION == ProtocolInfo::CURRENT_PROTOCOL){
                 $log->info(TextFormat::GREEN."[INFO] Your SlapperParticles is Compatible with your version!");
             } else {

@@ -36,7 +36,7 @@ class ParticleEffect extends Task {
                     $hypo = 0.8;
                     $a = cos(deg2rad($this->r/0.09))* $hypo;
                     $b = sin(deg2rad($this->r/0.09))* $hypo;
-                    $time = (int) (microtime(true) - $this->main->getServer()->getStartTime());
+                    $time = (int) (microtime(true) - $this->plugin->getServer()->getStartTime());
                     $seconds = floor($time % 20);
                     $up = $seconds/5;
                     $pos1 = new Vector3($x - $a, $y + $up, $z - $b);
