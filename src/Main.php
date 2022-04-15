@@ -43,7 +43,7 @@ class Main extends PluginBase{
         }
         if (isset($colorB)) {
             $log->error("[ERROR] Color B is blank!");
-            $log->notice("[NOTICE] Color B modified to 255 as default.")
+            $log->notice("[NOTICE] Color B modified to 255 as default.");
             $this->getConfig()->set("Color B", 255);
             return;
         }
