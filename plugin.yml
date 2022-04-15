@@ -1,0 +1,8 @@
+name: SlapperParticleV2
+version: 2.0.0
+api: [4.0.0]
+main: Main
+src-namespace-prefix: xqwtxon\SlapperParticleV2
+depend: [Slapper]
+author: xqwtxon
+description: Slapper have now particles!
