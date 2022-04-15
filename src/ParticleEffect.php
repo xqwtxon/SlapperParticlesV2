@@ -1,13 +1,13 @@
 <?php
 
-namespace xqwtxon\SlapperParticleV2;
+namespace xqwtxon\SlapperParticlesV2;
 
 use pocketmine\scheduler\Task;
 use pocketmine\world\particle\DustParticle;
 use pocketmine\world\particle\CriticalParticle;
 use pocketmine\math\Vector3;
 use slapper\entities\SlapperHuman;
-use xqwtxon\SlapperParticleV2\Main;
+use xqwtxon\SlapperParticlesV2\Main;
 
 class ParticleEffect extends Task {
     

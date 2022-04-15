@@ -1,10 +1,10 @@
 <?php
 
-namespace xqwtxon\SlapperParticleV2;
+namespace xqwtxon\SlapperParticlesV2;
 
 use pocketmine\plugin\PluginBase;
-use xqwtxon\SlapperParticleV2\ParticleEffect;
-use xqwtxon\SlapperParticleV2\SlapperParticleInfo;
+use xqwtxon\SlapperParticlesV2\ParticleEffect;
+use xqwtxon\SlapperParticlesV2\SlapperParticleInfo;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\VersionInfo;
 use pocketmine\utils\TextFormat;
