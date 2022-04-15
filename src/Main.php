@@ -39,7 +39,7 @@ class Main extends PluginBase implements SlapperParticleInfo {
             }
         $colorA = $config->get("Color A");
         $colorB = $config->get("Color B");
-        $colorA = $config->get("Color C");
+        $colorC = $config->get("Color C");
         if (!isset($colorA)) {
             $log->error("[ERROR] Color A is blank!");
             $log->notice("[NOTICE] Color A modified to 255 as default.");
