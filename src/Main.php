@@ -9,7 +9,7 @@ use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\VersionInfo;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase implementd SlapperParticleInfo {
+class Main extends PluginBase implements SlapperParticleInfo {
     public function onLoad() :void{
         $this->saveResource("config.yml");
         $log = $this->getServer()->getLogger();
