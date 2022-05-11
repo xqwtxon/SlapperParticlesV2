@@ -12,15 +12,15 @@ use pocketmine\utils\TextFormat;
 class Main extends PluginBase implements SlapperParticleInfo {
     public function onLoad() :void{
         $this->saveResource("config.yml");
-        $log = $this->getServer()->getLogger();
+        $log = $this->getLogger();
         $config = $this->getConfig();
         if ($config->get("config-version") == SlapperParticleInfo::CONFIG_VERSION){
             @rename($this->getDataFolder()."/"."config.yml", $this->getDataFolder()."/"."old-config.yml");
-            $log->notice("[NOTICE] Your configuration is outdated! The configuration was renamed as old-config.yml");
+            $log->notice("Your configuration is outdated! The configuration was renamed as old-config.yml");
             $this->saveResource("config.yml");
         } else {
             $this->saveDefaultConfig();
-            $log->info("[INFO] The plugin was loaded!");
+            $log->info("The plugin was loaded!");
         }
         if (SlapperParticleInfo::IS_DEVELOPMENT_BUILD == true){
             $log->warning(TextFormat::RED."Your SlapperParticle is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
@@ -29,10 +29,10 @@ class Main extends PluginBase implements SlapperParticleInfo {
     }
     public function onEnable(): void{
         $config = $this->getConfig();
-        $log = $this->getServer()->getLogger();
+        $log = $this->getLogger();
         $toggle = $config->get("enabled");
             if (SlapperParticleInfo::PROTOCOL_VERSION == ProtocolInfo::CURRENT_PROTOCOL){
-                $log->info(TextFormat::GREEN."[INFO] Your SlapperParticles is Compatible with your version!");
+                $log->info(TextFormat::GREEN."Your SlapperParticles is Compatible with your version!");
             } else {
                 $log->info(TextFormat::RED."[ERROR] Your SlapperParticles isnt Compatible with your version!");
                 $this->getServer()->getPluginManager()->disablePlugin($this);
