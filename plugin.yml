@@ -1,5 +1,5 @@
 name: SlapperParticlesV2
-version: 2.0.0
+version: 2.0.1
 api: [4.0.0]
 main: xqwtxon\SlapperParticlesV2\Main
 src-namespace-prefix: xqwtxon\SlapperParticlesV2
