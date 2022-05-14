@@ -43,5 +43,6 @@ class Main extends PluginBase {
             $this->getConfig()->set("Color C", 255);
         }
 		$this->saveDefaultConfig(); 
+                $this->getScheduler()->scheduleRepeatingTask(new SlapperParticle($this), 2); 
     }
 }
