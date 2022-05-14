@@ -4,12 +4,11 @@ namespace xqwtxon\SlapperParticlesV2;
 
 use pocketmine\plugin\PluginBase;
 use xqwtxon\SlapperParticlesV2\ParticleEffect;
-use xqwtxon\SlapperParticlesV2\SlapperParticleInfo;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\VersionInfo;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase implements SlapperParticleInfo {
+class Main extends PluginBase {
     public function onLoad() :void{
         $this->saveResource("config.yml");
         $log = $this->getLogger();
