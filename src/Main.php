@@ -13,7 +13,7 @@ class Main extends PluginBase {
         $this->saveResource("config.yml");
         $log = $this->getLogger();
         $config = $this->getConfig();
-        if ($config->get("config-version") == "1.0.1"){
+        if ($config->get("config-version") === "1.0.2"){
             @rename($this->getDataFolder()."/"."config.yml", $this->getDataFolder()."/"."old-config.yml");
             $log->notice("Your configuration is outdated! The configuration was renamed as old-config.yml");
             $this->saveResource("config.yml");
